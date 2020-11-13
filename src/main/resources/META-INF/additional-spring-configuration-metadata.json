@@ -1,0 +1,22 @@
+{"properties": [
+  {
+    "name": "spring.http.multipart.enabled",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.http.multipart.enabled'"
+  },
+  {
+    "name": "spring.mail..username",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.mail..username'"
+  },
+  {
+    "name": "spring.mail..host",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.mail..host'"
+  },
+  {
+    "name": "spring.mail.smtp.ssl",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.mail.smtp.ssl'"
+  }
+]}

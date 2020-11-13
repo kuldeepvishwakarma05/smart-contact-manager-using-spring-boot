@@ -1,0 +1,162 @@
+@charset "ISO-8859-1";
+
+
+body{
+background: #23CAC9!important;	
+}
+.tb-sh{
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+::-webkit-scrollbar{
+	width: 15px;
+}
+::-webkit-scrollbar-track{
+	width:15px;
+	background: white;
+	border-left: 0 solid white;
+	border-right: 0 solid white;
+}
+::-webkit-scrollbar-thumb{
+	background: #ffc107;
+	width:0;
+	height:35px;
+	transition: 0.5s ease;
+	cursor: pointer;
+}
+
+.navbar {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+
+    /* the rest of your styling */
+}
+
+
+
+.navbar-brand{
+	font-size: 20px;
+}
+.navbar .nav-link {
+	font-size: 20px;
+}
+
+.save-text{
+	font-family:cursive;
+}
+
+.bg-primary{
+	background: black !important;
+}
+.banner{
+	width:100%;
+	height:93vh;
+	background: #23CAC9;
+	background-size:cover;
+	color:white;
+	
+}
+.my-card{
+	padding:20px;
+	background:#ffffff;
+	border-radius: 2%;
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#login .container #login-row #login-column #login-box {
+  margin-top: 120px;
+  max-width: 600px;
+  border-radius: 2%;
+  height: 390px;
+  border: 1px solid #9C9C9C;
+  background-color: #ffffff;
+}
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+}
+#login .container #login-row #login-column #login-box #login-form #register-link {
+  margin-top: -85px;
+}
+
+.my_profile_pick{
+	height: 35px;
+	width: 35px;
+	object-fit: cover;
+	border-radius: 50%;
+	
+}
+
+
+/* sidebar */
+
+.sidebar .close-btn{
+ position: absolute;
+ top:0;
+ right: 35px;
+ font-size: 30px;
+ cursor: pointer;	
+}
+
+@media only screen and (max-width: 600px){
+
+
+   .sidebar{
+	display: none;
+	width: 80% !important;
+	background: white;
+	height: 100vh;
+	position: fixed;
+	padding-top: 20px;
+       }
+
+     .content{
+	margin-left: 0%!important;
+	
+         }
+}
+.content .fas{
+	color:white;
+	font-size: 30px;
+	cursor: pointer;
+}
+.sidebar{
+	z-index: 9999999999999999999999999999999999999999999;
+	width:18%;
+	background: white;
+	height: 100%;
+	position: fixed;
+	padding-top: 45px;
+}
+
+.sidebar a{
+	display: block;
+	width: 100%;
+	padding: 10px 25px;
+	text-decoration: none;
+	color: gray;
+}
+
+.sidebar a:hover{
+	background: #23CAC9 ;
+	color: white;
+}
+
+.sidebar .divider{
+	height: .5px;
+	width: 100%;
+	background: #23CAC9 ;
+	margin-top: 10px;
+}
+.content{
+	margin-left: 20%;
+	
+}
+.navbar .nav-item .dash{
+	   color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	
+}
+

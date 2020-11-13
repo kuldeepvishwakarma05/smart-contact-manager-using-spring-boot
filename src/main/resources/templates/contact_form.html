@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html  lang="en" xmlns:th="http://www.thymleaf.org" th:replace="base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>This contact from</title>
+</head>
+<body>
+	<section class="banner d-flex justify-content-center align-items-center">
+<div class="card bg-dark mt-5">
+<div class="card-body">
+<form th:action="@{/contact}" method="post" enctype="multipart/form-data">
+  <div class="form-group">
+    <label for="fullName">Full Name</label>
+    <input type="text" name="fullname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+    </div>
+  
+  
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  required>
+    </div>
+    
+    
+  <div class="form-group">
+    <label for="subject">Subject</label>
+    <input type="text" name="subject" class="form-control" id="exampleInputPassword1"  required>
+  </div>
+ 
+  <div class="form-group">
+    <label for="content">Content</label>
+    <textarea name="content" rows="4" class="form-control"  required></textarea>
+    </div>
+ 
+  <div class="form-group">
+    <label for="attachment">Attachment</label>
+ <input type="file" name="attachment" />
+    </div>
+ 
+  
+  			
+  <button type="submit" class="btn btn-warning btn-block">Submit</button>
+</form>
+</div>
+</div>
+	</section>
+
+
+</body>
+</html>

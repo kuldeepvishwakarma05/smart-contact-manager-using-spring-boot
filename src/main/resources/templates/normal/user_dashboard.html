@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html  lang="en" xmlns:th="http://www.thymleaf.org" th:replace="normal/base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>This is home page </title>
+</head>
+<body>
+
+	<section class="text-center">
+    <h1 class="text-white ml-5">Welcome  <i class="fas fa-user ml-3"></i>   <span style="color: black;" th:text="${user.name}"></span>  Let's explore contacts</h1>
+    
+    <div class="row text-center">
+    <div class="card-body">
+    
+    
+    <i class="fas fa-id-card-alt ml-3"></i>
+    <i class="fas fa-file-signature ml-3"></i>
+    <i class="fas fa-user-circle ml-3"></i> 
+    
+    </div>
+    </div>
+      <img alt="lock-image" style="height: 250px; width: 230px; overflow: hidden;" th:src="@{/img/phone.png}">
+	</section>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

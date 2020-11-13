@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html  lang="en" xmlns:th="http://www.thymleaf.org" th:replace="normal/base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>This is home page </title>
+
+
+
+
+</head>
+
+<body>
+
+	<section class=" ml-5"> 
+	
+<div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+  <div class="card-header">Your name</div>
+  <div class="card-body">
+    <h5 class="card-title"><span th:text="${user.name}"></span></h5>
+  </div>
+</div>
+
+<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+  <div class="card-header">Your email</div>
+  <div class="card-body">
+    <h5 class="card-title"><span th:text="${user.email}"></span></h5>
+  </div>
+</div>
+
+<div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+  <div class="card-header">About</div>
+  <div class="card-body">
+    <h5 class="card-title"><span th:text="${user.about}"></span></h5>
+  </div>
+  
+  
+  
+</div>
+
+  
+	</section>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

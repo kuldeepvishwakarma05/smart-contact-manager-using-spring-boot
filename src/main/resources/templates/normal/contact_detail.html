@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html  lang="en" xmlns:th="http://www.thymleaf.org" th:replace="normal/base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>This is home page </title>
+</head>
+<body>
+
+	<section>
+	
+	<div class="card mr-3 ml-3" th:if=${contact}>
+	<div class="card-body">
+	<div class="container text-center">
+	
+	  <img src="" style="height:200px; width: 200px;" class="my_profile_pick" th:src="@{'/img/' +${contact.image}}" alt="profile photo" />
+	<h2 th:text="${contact.name}"></h2>
+	
+	
+	<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#ID</th>
+      <th scope="col"><span th:text="${contact.cId}"></span></th>
+   
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Email</th>
+      <td><span th:text="${contact.email}"></span></td>
+ 
+    </tr>
+   
+   <tr>
+      <th scope="row">Phone</th>
+      <td><span th:text="${contact.phone}"></span></td>
+ 
+    </tr>
+   
+   <tr>
+      <th scope="row">work</th>
+      <td><span th:text="${contact.work}"></span></td>
+ 
+    </tr>
+    
+    
+
+  </tbody>
+</table>
+
+<div class="description">
+<th:block th:utext="${contact.description}"></th:block>
+
+</div>
+
+<div class="container">
+ <a  th:onclick="|deleteContact(${contact.cId})|"  class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></a>
+ 
+       <form method="post" th:action="@{'/user/update-contact/'+${contact.cId}}">
+      <button class="btn btn-primary mt-1"><i class='far fa-edit'></i></button>
+      </form>
+      
+</div>
+	</div>
+	
+	
+	
+	</div>
+	
+	
+	</div>
+	<h1 class="text-white bg-danger mr-5 text-center" th:unless=${contact}>Something went wrong :(</h1>
+	
+	</section>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
