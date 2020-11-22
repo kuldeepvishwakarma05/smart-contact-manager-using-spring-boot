@@ -88,7 +88,19 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 	border-radius: 50%;
 	
 }
+/* search */
 
+.search-container{
+	position: relative;
+}
+.search-result{
+	position: absolute;
+	background: white;
+	width: 100%;
+	padding: 10px;
+	border:1px solid gray;
+	display: none;
+}
 
 /* sidebar */
 

@@ -12,6 +12,18 @@
 	<div class="card-body">
 	
 	<h1 class="text-center">Your Contacts</h1>
+	<!-- Search  -->
+	<div class="search-container my-4 ">
+	<input onkeyup="search()" id="search-input" type="text" class="form-control"  placeholder="Search your contacts"/>
+	
+	<div class="search-result">
+	
+	<!-- Result goes here -->
+
+
+	</div>
+	</div>
+	
 	<div class="table-responsive">
 	<table class="table table-dark  tb-sh  table-hover">
   <thead >
@@ -31,7 +43,7 @@
      
       
       <td>
-      <img src="" class="my_profile_pick" th:src="@{'/img/' +${c.image}}" alt="profile photo" />
+      <img src="" class="my_profile_pick" th:src="@{'/img/' +${c.image}}" alt="" />
       <span th:text="${c.name}"></span></td>
      
       <td>
